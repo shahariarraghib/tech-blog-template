@@ -8,7 +8,10 @@ import styles from "../../style/navbar.module.css";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [theme, setTheme] = useState(() => {
-    const storedTheme = localStorage.getItem("theme");
+    if (typeof window !== "undefined") {
+      const storedTheme = localStorage.getItem("theme");
+    }
+
     return storedTheme
       ? storedTheme
       : window.matchMedia("(prefers-color-scheme: dark)").matches
