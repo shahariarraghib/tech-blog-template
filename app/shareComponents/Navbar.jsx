@@ -9,14 +9,22 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [theme, setTheme] = useState(() => {
     if (typeof window !== "undefined") {
+      // Code will only execute in a browser environment where localStorage is available
       const storedTheme = localStorage.getItem("theme");
-    }
+      const preferredTheme = storedTheme
+        ? storedTheme
+        : window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light";
 
-    return storedTheme
-      ? storedTheme
-      : window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
+      // console.log("Preferred theme:", preferredTheme);
+    }
+    // const storedTheme = localStorage.getItem("theme");
+    // return storedTheme
+    //   ? storedTheme
+    //   : window.matchMedia("(prefers-color-scheme: dark)").matches
+    //   ? "dark"
+    //   : "light";
   });
 
   useEffect(() => {
