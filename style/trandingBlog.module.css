@@ -1,0 +1,177 @@
+.styleH2Tag {
+  font-size: 3.125rem;
+  font-weight: 600;
+  color: var(--white);
+  font-family: var(--font-prompt);
+  margin-bottom: 0px;
+  line-height: 1.4;
+}
+
+/* button */
+.bannerButton {
+  position: relative;
+  /* overflow: hidden; */
+  z-index: 1;
+  width: 250px;
+  cursor: pointer;
+}
+
+.bannerButton::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 250px;
+  height: 105%;
+  border: 1px solid #008b5e; /* Initial border color */
+  box-sizing: border-box;
+  transform-origin: 0 10;
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+  transform: skewX(10deg); /* Initial skew angle */
+}
+
+.bannerButton:hover::before {
+  transform: skewX(-10deg); /* Skew angle on hover */
+}
+.bannerH4 {
+  margin-top: 15px;
+  padding: 10px 5px 10px 5px;
+  margin-left: 70px;
+}
+.bannerButton:hover {
+  color: #008b5e;
+}
+/* cart */
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  background: rgba(77, 77, 77, 0.9);
+  color: #fef5df;
+  opacity: 0;
+  transition: all 0.5s;
+  font-family: "Playfair Display", serif;
+}
+
+.items {
+  padding-left: 20px;
+  letter-spacing: 3px;
+}
+
+.head {
+  font-size: 30px;
+  line-height: 40px;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+.head hr {
+  margin-top: 20px;
+  display: block;
+  width: 0;
+  border: none;
+  border-bottom: solid 3px #008b5e;
+  /* position: absolute; */
+  bottom: 0;
+  left: 20px;
+  transition: all 0.5s;
+}
+
+.price {
+  margin-top: 10px;
+  font-size: 22px;
+  line-height: 10px;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+.price .old {
+  margin-top: 20px;
+  color: #008b5e;
+}
+.new {
+  margin-top: 20px;
+}
+
+.cart {
+  font-size: 12px;
+  opacity: 0;
+  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+
+.cart .expandDivStyle {
+  margin-right: 20px;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white);
+  font-family: var(--font-prompt);
+  margin-bottom: 20px;
+}
+
+.trandingBlogtitle {
+  position: absolute;
+  font-size: 2.188rem;
+  font-weight: 500;
+  color: var(--white);
+  font-family: var(--font-prompt);
+  margin-bottom: 20px;
+}
+.container:hover .trandingBlogtitle {
+  opacity: 0;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+.container:hover .overlay .head {
+  transform: translateY(0px);
+}
+.container:hover .overlay hr {
+  width: 75px;
+  transition-delay: 0.4s;
+}
+.container:hover .overlay .price {
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+.container:hover .overlay .cart {
+  transform: translateY(0px);
+  transition-delay: 0.6s;
+  opacity: 1;
+}
+
+.profileImageStyle {
+  margin-right: 20px;
+  margin-top: 10px;
+  border: 2px solid #008b5e;
+  border-radius: 50px;
+}
+
+.expandStyle {
+  display: inline-block;
+  position: relative;
+}
+.expandStyle::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: currentcolor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  color: #008b5e;
+}
+.expandStyle:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

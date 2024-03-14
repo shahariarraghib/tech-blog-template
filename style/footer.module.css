@@ -1,0 +1,159 @@
+.logoFirstBracketstyleLeft {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #008b5e;
+}
+.logoFirstBracketstyleRight {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #a100ff;
+}
+.h3Style {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--white);
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+.spanStyle {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--white);
+}
+.logoDiv {
+  padding: 20px;
+}
+.logoTextStyle {
+  /* position: absolute; */
+  color: #fff;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+.logoTextStyleDiv {
+  margin-top: 10px;
+}
+
+.footerLink {
+  border-top: 1px solid rgba(153, 153, 153, 0.2);
+  border-bottom: 1px solid rgba(153, 153, 153, 0.2);
+  padding: 30px;
+}
+.footerLiListLink {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.copyrightArea {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.copyrightP {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 0px;
+}
+
+.footerSocialArea {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+}
+
+.liImgTagStyle {
+  width: 30px;
+  height: 30px;
+  border-radius: 0%;
+}
+.liaTagStyle {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+}
+.copyrightPStyle {
+  font-size: inherit;
+  font-weight: 500;
+  color: #008b5e;
+  margin-left: 5px;
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .copyrightArea {
+    padding: 20px 0px;
+    display: block;
+  }
+  .copyrightP {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footerSocialArea {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+    gap: 15px;
+  }
+
+  .liImgTagStyle {
+    width: 20px;
+    height: 30px;
+    border-radius: 0%;
+  }
+  .liaTagStyle {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .copyrightPStyle {
+    font-size: inherit;
+    font-weight: 500;
+    color: #008b5e;
+    margin-left: 5px;
+  }
+}
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) {
+  .copyrightArea {
+    padding: 20px 0px;
+    /* display: flex; */
+    /* justify-content: space-around;
+    align-items: center; */
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .element {
+    width: 30%; /* Adjust width for medium devices */
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .element {
+    width: 25%; /* Adjust width for large devices */
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .element {
+    width: 20%; /* Adjust width for extra large devices */
+  }
+}

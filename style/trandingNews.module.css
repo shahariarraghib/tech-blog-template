@@ -1,0 +1,79 @@
+.styleH1Tag {
+  border: 0;
+  font: inherit;
+  font-size: 180px;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  font-weight: bolder;
+}
+.styleH4Tag {
+  border: 0;
+  font: inherit;
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  font-weight: bolder;
+}
+
+.mainDivStyle {
+  display: flex !important;
+}
+
+.imageContainer img {
+  width: 900px;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+}
+/* .imageStyle {
+  width: 700px;
+  height: 900px;
+} */
+.arrowDiv {
+  margin-left: 200px;
+  margin-top: 30px;
+}
+
+.cartTitleStyle {
+  font-size: 2rem;
+}
+.textContainer {
+  width: 700px;
+  padding: 30px;
+}
+
+.bannerButton {
+  position: relative !important;
+  /* overflow: hidden; */
+  z-index: 1;
+  width: 250px;
+  cursor: pointer !important;
+}
+
+.bannerButton::before {
+  content: "";
+  position: absolute !important;
+  top: 0px;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  border: 1px solid #008b5e; /* Initial border color */
+  box-sizing: border-box;
+  transform-origin: 0 10;
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+  transform: skewX(10deg) !important; /* Initial skew angle */
+}
+
+.bannerButton:hover::before {
+  transform: skewX(-10deg) !important; /* Skew angle on hover */
+}
+.bannerH4 {
+  margin-top: 15px;
+  padding: 10px 5px 10px 5px;
+  margin-left: 70px;
+}
+.bannerButton:hover {
+  color: #008b5e !important;
+}

@@ -1,0 +1,235 @@
+.bannerMainDiv {
+  padding: 0 50px;
+  position: sticky;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  top: 0px;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bannerMainDiv .container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.right {
+  width: 50%;
+  position: relative;
+}
+
+.bannerButton {
+  position: relative;
+  /* overflow: hidden; */
+  z-index: 1;
+  width: 250px;
+  cursor: pointer;
+}
+
+.bannerButton::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  border: 1px solid #008b5e; /* Initial border color */
+  box-sizing: border-box;
+  transform-origin: 0 10;
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+  transform: skewX(10deg); /* Initial skew angle */
+}
+
+.bannerButton:hover::before {
+  transform: skewX(-10deg); /* Skew angle on hover */
+}
+.bannerH4 {
+  margin-top: 15px;
+  padding: 10px 5px 10px 5px;
+  margin-left: 70px;
+}
+.bannerButton:hover {
+  color: #008b5e;
+}
+
+@media (max-width: 575.98px) {
+  .arrow {
+    width: 330px;
+    position: absolute;
+    /* color: black; */
+    left: 330px;
+    top: 50px;
+    z-index: 40;
+  }
+  .arrow2 {
+    width: 1000px;
+    position: absolute;
+    /* color: black; */
+    left: -630px;
+    top: -200px;
+    z-index: 40;
+  }
+
+  .h1Tag {
+    /* color: black; */
+    font-weight: bolder;
+    order: 0;
+    font: inherit;
+    font-size: 40px;
+    margin-left: 20px;
+    padding: 0;
+    vertical-align: baseline;
+    /* line-height: 120px; */
+  }
+  .h1TagSpan1 {
+    /* color: aqua; */
+    margin-left: 130px;
+  }
+  .h1TagSpan2 {
+    /* color: aqua; */
+    margin-left: 240px;
+  }
+  .hrStyle {
+    border: 3px solid #008b5e;
+    width: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .arrow {
+    width: 400px;
+    position: absolute;
+    /* color: black; */
+    left: 440px;
+    top: 20px;
+    z-index: 40;
+  }
+  .arrow2 {
+    width: 1000px;
+    position: absolute;
+    /* color: black; */
+    left: -530px;
+    top: -300px;
+    z-index: 40;
+  }
+
+  .h1Tag {
+    /* color: black; */
+    font-weight: bolder;
+    order: 0;
+    font: inherit;
+    font-size: 50px;
+    margin-left: 20px;
+    padding: 0;
+    vertical-align: baseline;
+    /* line-height: 120px; */
+  }
+  .h1TagSpan1 {
+    /* color: aqua; */
+    margin-left: 130px;
+  }
+  .h1TagSpan2 {
+    /* color: aqua; */
+    margin-left: 300px;
+  }
+  .hrStyle {
+    border: 3px solid #008b5e;
+    width: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .arrow {
+    width: 500px;
+    position: absolute;
+    /* color: black; */
+    left: 650px;
+    top: 40px;
+    z-index: 40;
+  }
+  .arrow2 {
+    width: 1000px;
+    position: absolute;
+    /* color: black; */
+    left: -750px;
+    top: -300px;
+    z-index: 40;
+  }
+
+  .h1Tag {
+    /* color: black; */
+    font-weight: bolder;
+    order: 0;
+    font: inherit;
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    /* line-height: 120px; */
+  }
+  .h1TagSpan1 {
+    /* color: aqua; */
+    margin-left: 200px;
+  }
+  .h1TagSpan2 {
+    /* color: aqua; */
+    margin-left: 500px;
+  }
+  .hrStyle {
+    border: 3px solid #008b5e;
+    width: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .arrow {
+    width: 500px;
+    position: absolute;
+    /* color: black; */
+    left: 650px;
+    top: 40px;
+    z-index: 40;
+  }
+  .arrow2 {
+    width: 1000px;
+    position: absolute;
+    /* color: black; */
+    left: -750px;
+    top: -300px;
+    z-index: 40;
+  }
+
+  .h1Tag {
+    /* color: black; */
+    font-weight: bolder;
+    order: 0;
+    font: inherit;
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    /* line-height: 120px; */
+  }
+  .h1TagSpan1 {
+    /* color: aqua; */
+    margin-left: 200px;
+  }
+  .h1TagSpan2 {
+    /* color: aqua; */
+    margin-left: 500px;
+  }
+  .hrStyle {
+    border: 3px solid #008b5e;
+    width: 50px;
+    margin-bottom: 20px;
+  }
+}

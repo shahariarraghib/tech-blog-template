@@ -1,0 +1,86 @@
+/* logo */
+.logoFirstBracketstyleLeft {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #008b5e;
+}
+.logoFirstBracketstyleRight {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #a100ff;
+}
+
+/* navbar containe */
+.parallelogramContainer {
+  position: relative;
+  display: inline-block;
+  /* overflow: hidden; */
+  padding: 8px;
+  transition: background-color 0.5s ease;
+  z-index: 1;
+  /* Smooth transition for background color */
+}
+
+.parallelogramContainer:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #008b5e; /* Border color */
+  box-sizing: border-box;
+  transform: skewX(20deg); /* Skew angle */
+  z-index: -1; /* Ensure the border is behind the text */
+}
+.parallelogramContainer:hover {
+  color: #008b5e !important;
+}
+
+.circlewrapper {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin: 10px;
+}
+
+.icon {
+  position: absolute;
+  color: #fff;
+  font-size: 55px;
+  top: 20px;
+  left: 25px;
+  transform: translate(-50%, -50%);
+}
+
+.circle {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 2.5px;
+  background-clip: content-box;
+  animation: spin 20s linear infinite;
+}
+
+.circlewrapper:active .circle {
+  animation: spin 2s linear infinite;
+}
+
+.success {
+  /* background-color: #4bb543; */
+  border: 2.5px dashed #4bb543;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.pagewrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

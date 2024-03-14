@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  --red: #008b5e;
+  --accent: var(--red);
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+.progress .indicator {
+  stroke: var(--accent);
+}
+
+::-webkit-scrollbar {
+  height: 12px;
+  width: 5px;
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--background);
+}
+.progressbar {
+  position: fixed;
+  z-index: 50;
+  top: 80px;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #008b5e;
+  transform-origin: 0%;
+}
+
+.link {
+  height: 40px;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+}
+.mask {
+  position: relative;
+  padding: 0;
+  height: 25px;
+  overflow: hidden;
+}
+
+.title {
+  display: block;
+  font-weight: bolder;
+  /*  Set same font-size and line height  */
+  font-size: 20px;
+  line-height: 20px;
+  transition: transform 0.2s ease;
+}
+
+.linkContainer {
+  transition: transform 0.2s ease;
+  margin-left: 50px;
+}
+
+.linktitle1 {
+  transform-origin: right center;
+}
+
+.linktitle2 {
+  transform-origin: left center;
+  /* transform: rotate(20deg); */
+}
+.linkicon {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  /* background: #f8f8ff; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+
+  /*  Remove overflow to see how it works　:) */
+  overflow: hidden;
+}
+.icon {
+  color: red;
+  display: block;
+  position: absolute;
+  transition: transform 0.2s ease;
+}
+
+.icon:nth-child(2) {
+  transform: translate(-40px);
+}
+/* Hover Action*/
+
+/* Move up two texts (20px = font-size) */
+.link:hover .linkContainer {
+  transform: translateY(-20px);
+}
+
+/* Rotate texts a little bit */
+.link:hover .linktitle1 {
+  transform: rotate(20deg);
+}
+
+.link:hover .linktitle2 {
+  transform: rotate(0);
+}
+
+/* Move arrows to right */
+.link:hover .icon:first-child {
+  transform: translate(40px);
+}
+
+.link:hover .icon:nth-child(2) {
+  transform: translate(0px);
+}
+
+.bannerButton {
+  position: relative;
+  /* overflow: hidden; */
+  z-index: 1;
+}
+
+.bannerButton::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  margin-left: -24.5px;
+  margin-right: 0px;
+  width: 450px;
+  height: 100%;
+  border: 1px solid #008b5e; /* Initial border color */
+  box-sizing: border-box;
+  transform-origin: 0 10;
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+  transform: skewX(5deg); /* Initial skew angle */
+}
+
+.bannerButton:hover::before {
+  transform: skewX(-5deg); /* Skew angle on hover */
+}
