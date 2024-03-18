@@ -10,14 +10,20 @@ const TrandingBlog = () => {
   if (loading) return <p>Loading...</p>;
 
   return (
-    <div className="bg-white dark:bg-[#04161a]">
+    <div className="bg-[#04161a]">
       <div className="flex flex-wrap justify-around">
         <div>
-          <h2 className={`${styles.styleH2Tag} mt-20`}>Trending Blogs</h2>
+          <h2
+            className={`${styles.styleH2Tag} mt-20 text-black dark:text-white`}
+          >
+            Trending Blogs
+          </h2>
         </div>
         <div>
           <div className={`${styles.bannerButton} mt-20`}>
-            <h4 className={`${styles.bannerH4}`}>View All Blogs</h4>
+            <h4 className={`${styles.bannerH4} text-black dark:text-white`}>
+              View All Blogs
+            </h4>
           </div>
         </div>
       </div>

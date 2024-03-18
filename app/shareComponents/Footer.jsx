@@ -5,7 +5,7 @@ import { IoLogoLinkedin } from "react-icons/io";
 import { TfiEmail } from "react-icons/tfi";
 const Footer = () => {
   return (
-    <div className={`${styles.footerDiv} bg-white dark:bg-[#04161a]`}>
+    <div className={`${styles.footerDiv}bg-[#04161a]`}>
       <div className={`${styles.logoDiv} flex justify-center items-center`}>
         <div className="">
           <span className={`${styles.logoFirstBracketstyleLeft} `}>

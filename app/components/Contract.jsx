@@ -59,7 +59,7 @@ const Contract = () => {
     ],
   };
   return (
-    <div className={`${styles.bannerButton1} bg-white dark:bg-[#04161a]`}>
+    <div className={`${styles.bannerButton1}bg-[#04161a]`}>
       <div className="lg:flex align-items-center justify-evenly g-4">
         <div className="">
           <span className={`${styles.suscribeStyle}`}>Subscribe</span>
@@ -67,7 +67,7 @@ const Contract = () => {
             <h2 className={`${styles.NewsletterStyle}`}>Our Newsletter</h2>
             <p className={`${styles.pTagStyle} text-justify`}>
               Suspendisse bibendum efficitur orci, a pretium eratoin one{" "}
-              <br className="hidden lg:block" />
+              <br className="hidden lg:block text-black dark:text-white" />
               mattis nec. Vestibulum ante ipsum primis in.
             </p>
           </div>
@@ -90,7 +90,7 @@ const Contract = () => {
           </button>
         </div>
       </div>
-      <div className={`${styles.sliderDiv} slider-container`}>
+      <div className={`${styles.sliderDiv} slider-containe`}>
         <Slider {...settings}>
           <div>
             <h3 className={`${styles.sliderTextStyle1}`}>Get In Touch</h3>

@@ -71,10 +71,14 @@ const TrandingNews = () => {
     <div className="bg-white dark:bg-[#020b0d]">
       <div>
         <div className="flex justify-center">
-          <h1 className={`${styles.styleH1Tag}`}>360 NEWS</h1>
+          <h1 className={`${styles.styleH1Tag} text-black dark:text-white`}>
+            360 NEWS
+          </h1>
         </div>
         <div className="flex justify-center">
-          <h4 className={`${styles.styleH4Tag} text-center`}>
+          <h4
+            className={`${styles.styleH4Tag} text-center text-black dark:text-white`}
+          >
             Every day, we embrace change and create value for all our <br />
             users, in every part of the world.
           </h4>
@@ -96,12 +100,22 @@ const TrandingNews = () => {
                 className={`${styles.textContainer} flex justify-end items-end ml-auto`}
               >
                 <div>
-                  <h2 className={`${styles.cartTitleStyle}`}>{card.title}</h2>
-                  <p className="text-justify">
+                  <h2
+                    className={`${styles.cartTitleStyle} text-black dark:text-white`}
+                  >
+                    {card.title}
+                  </h2>
+                  <p className="text-justify text-black dark:text-white">
                     {card?.description?.slice(0, 200)}...
                   </p>
-                  <div className={`${styles.bannerButton}`}>
-                    <h4 className={`${styles.bannerH4}`}>Read more</h4>
+                  <div
+                    className={`${styles.bannerButton} text-black dark:text-white`}
+                  >
+                    <h4
+                      className={`${styles.bannerH4} text-black dark:text-white`}
+                    >
+                      Read more
+                    </h4>
                   </div>
                 </div>
               </div>

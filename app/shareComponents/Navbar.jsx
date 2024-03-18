@@ -16,8 +16,6 @@ const Navbar = () => {
         : window.matchMedia("(prefers-color-scheme: dark)").matches
         ? "dark"
         : "light";
-
-      // console.log("Preferred theme:", preferredTheme);
     }
     // const storedTheme = localStorage.getItem("theme");
     // return storedTheme
@@ -95,7 +93,9 @@ const Navbar = () => {
                   &#125;
                 </span>
               </span>
-              <span className="linktitle2 title">Tech Blog</span>
+              <span className="linktitle2 title text-black dark:text-white">
+                Tech Blog
+              </span>
             </div>
           </span>
           <div className="linkicon">

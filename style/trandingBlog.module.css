@@ -1,7 +1,7 @@
 .styleH2Tag {
   font-size: 3.125rem;
   font-weight: 600;
-  color: var(--white);
+  /* color: var(--white); */
   font-family: var(--font-prompt);
   margin-bottom: 0px;
   line-height: 1.4;
